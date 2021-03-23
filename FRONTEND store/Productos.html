@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>TIENDA FRONTEND-PRODUCTOS</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img src="/img/logo.png" alt="Logotipo frontend store" class="header__logo__producto">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace " href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="/Nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="/Productos.html">Productos</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1 class="text__cooming">Coming soon</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/coming_soon.png" alt="coming__aoom">
+
+            <div class="camisa__contenido">
+                <h1 class="fallo">El producto seleccionado no esta disponible en este momento.Por favor pruebe mas tarde
+                </h1>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar Talla--</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="ninos">niño/a</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min=1 step=1>
+
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito" onclick="saludo()">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__texto">
+            Front End Store-Todos los derechos reservados-
+        </p>
+    </footer>
+    <script>
+        function saludo() {
+            alert("Gracias por visitar mi proyecto.")
+        }
+    </script>
+</body>
+
+</html>
