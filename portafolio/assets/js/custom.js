@@ -112,12 +112,15 @@ function filtcat(recibido) {
 }
 
 function mostrar() {
-   const nav=document.getElementById('menu');
-    nav.classList.add('open');
-   setTimeout(() => {
-    nav.classList.remove('open');
+    const nav = document.getElementById('menu');
 
-   },1000);
-  
+    if (nav.classList.contains("open")) {
+        nav.classList.remove('open');
+
+    } else {
+        nav.classList.add('open');
+
+    }
+
 
 }
