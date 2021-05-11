@@ -110,3 +110,14 @@ function filtcat(recibido) {
     }
 
 }
+
+function mostrar() {
+   const nav=document.getElementById('menu');
+    nav.classList.add('open');
+   setTimeout(() => {
+    nav.classList.remove('open');
+
+   },1000);
+  
+
+}
