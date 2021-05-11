@@ -6,7 +6,6 @@ https://templatemo.com/tm-531-reflux
 
 */
 
-
 body {
     font-display: swap;
     font-family: 'Times New Roman', Times, serif;
@@ -178,21 +177,6 @@ html {
     color: blue;
 }
 
-.menu .copyright-text {
-    position: relative;
-    margin-top: 60px;
-}
-
-.menu .copyright-text p {
-    border-top: 1px solid rgba(250, 250, 250, 0.1);
-    display: inline-block;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    font-size: 13px;
-}
-
 .menu:before,
 .menu:after {
     content: "";
@@ -206,10 +190,6 @@ html {
 .menu a {
     text-decoration: none;
     color: inherit;
-}
-
-.menu {
-    text-align: center;
 }
 
 .menu::-webkit-scrollbar {
@@ -235,6 +215,7 @@ html {
     width: 20%;
     will-change: transform;
     z-index: 9999 !important;
+    text-align: center;
 }
 
 .menu-toggle {
@@ -269,12 +250,13 @@ html {
     cursor: pointer;
     text-align: right;
     color: blue;
-    background-color: blue;
+    background-color: turquoise;
     width: 100%;
     height: 60px;
     text-align: center;
     display: inline-block;
     line-height: 60px;
+    border: none;
 }
 
 
@@ -706,7 +688,7 @@ label>span:hover {
 @media screen and (max-width: 845px) {
     #menu-toggle,
     #menu-close {
-        display: inline-block;
+        display: inline;
     }
     .menu {
         width: 320px;
