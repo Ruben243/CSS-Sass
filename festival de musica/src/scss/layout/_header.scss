@@ -1,0 +1,42 @@
+.header {
+    background-color: $verde;
+    .contenido-header {
+        padding: $separacion /2 0;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    //contenido-header
+    h1 {
+        color: $blanco;
+        margin-bottom: 1rem;
+        text-align: center;
+    } //h1
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #4444;
+    }
+} //header
+
+.navegacion-principal {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        text-decoration: none;
+        //arregla el responsive hasta una minima de 200px
+        @include pequeño {
+            font-size: 2rem;
+            margin-left: 1rem; //mantiene separados los enlaces en distintas medias
+        }
+        // el & hace referencia al elemento padre que lo rodea
+        &:hover {
+            color: $amarillo;
+        }
+    }
+}

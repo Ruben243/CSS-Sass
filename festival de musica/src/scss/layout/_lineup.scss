@@ -1,0 +1,85 @@
+.lineup{
+    background-color: $rosa;
+    padding: $separacion 0;
+    h3,p{
+        text-align: center;
+        color:$blanco
+    }
+    .dia{
+        text-transform: uppercase;
+        margin: $separacion 0;
+
+    }
+  
+}
+
+.escenarios-contenedor{
+    @include tablet{
+        @include grid(2,$separacion);
+    }
+
+    .escenario{
+        padding-top: $separacion / 2;
+    }
+
+
+    .nombre-escenario{
+        color:$negro;
+        font-size: 2rem;
+        font-weight: $delgada;
+        /*El & junta el after  en el css compilado para que se aplique correctamente*/
+        &:after{
+            content: '';  
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto; 
+            background-size:15rem;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+    }
+}
+
+.edm .nombre-escenario{
+    &:after{
+        background-image: url(../img/icono_edm.png);//la url debe hacerse desde la ubicacion del css compilado
+    }
+}
+.rock .nombre-escenario{
+    &:after{
+        background-image: url(../img/icono_rock.png);//la url debe hacerse desde la ubicacion del css compilado
+    }
+}
+.calendario{
+    padding: 0;
+    list-style: none;
+    li{
+        padding: $separacion /2;
+        font-weight: $bold;
+
+        span{
+            font-weight: $regular;
+        }
+   &:hover{
+        background-color: forestgreen;
+        color: ghostwhite;
+    }
+
+    }
+ 
+}
+.bg-verde .calendario li:nth-child(2n +1){
+    background-color: darken($verde,10);
+    &:hover{
+        background-color: forestgreen;
+        color: ghostwhite;
+    }
+}
+.bg-amarillo .calendario li:nth-child(2n +1){
+    background-color: darken($amarillo,10);
+    &:hover{
+        background-color: forestgreen;
+        color: ghostwhite;
+    }
+}

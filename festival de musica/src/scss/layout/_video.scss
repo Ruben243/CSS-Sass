@@ -1,0 +1,52 @@
+.video {
+    position: relative;
+    max-height: 70rem;
+    overflow: hidden;
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(-45deg, rgba(137, 28, 30, 1) 0%, rgba(158, 55, 242, 0.67) 67%, rgba(255, 255, 255, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(137, 28, 30, 1) 0%, rgba(158, 55, 242, 0.67) 67%, rgba(255, 255, 255, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%);
+        background: linear-gradient(135deg, rgba(137, 28, 30, 1) 0%, rgba(158, 55, 242, 0.67) 67%, rgba(255, 255, 255, 0.51) 99%, rgba(255, 255, 255, 0.5) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#891c1e', endColorstr='#80ffffff', GradientType=1);
+    }
+    video {
+        display: block;
+        width: 100%;
+    }
+}
+.contenido-video{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index:1;
+    h2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; //el background rosa se ajunta al texto
+        color: $blanco;
+       
+        @include pequeño{
+            font-size: 2rem;
+        }
+        @include huawei{
+            font-size: 3rem;
+        }
+       @include tablet{
+           font-size: 6rem;
+       }
+
+        @include desktop{
+             font-size: 7rem;
+        }
+       
+        span{
+            background-color: $rosa;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+
+        }
+    }
+}
