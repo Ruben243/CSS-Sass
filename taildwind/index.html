@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-body-pattern bg-scroll">
+    <!-- cabecera -->
+    <header id="header" class="
+    h-20
+    bg-black 
+    font-sans 
+    text-white 
+    bebas
+    xs:h-36
+    sm:h-32
+    md:h-20
+    ">
+        <div class="container mx-auto flex flex-row xs:flex-col sm:flex-col md:flex-row">
+            <div id="logo" class="flex-1 xs:mx-auto sm:mx-auto">
+
+                <div class="
+                    w-64 
+                    group
+                    pt-0.5 pb-0.5
+                    tracking-wider cursor-pointer overflow-hidden 
+                    transition duration-300 rounded-sm 
+                    bg-azul-claro 
+                    hover:text-black hover:bg-gray-200
+                    mt-4
+                    ml-5
+                    flex
+                    space-x-3
+                    text-center
+                    items-center
+                    ">
+                    <!-- Tuerca -->
+                    <span class="symbol
+                    text-3xl
+                    mt-1
+                    ml-5
+                    animate-spin-low
+                    group-hover:animate-none
+                    group-hover:animate-from-bellow
+                    ">
+                        S
+                    </span>
+                    <h3 class="
+                    text-4xl
+                    mt-1.5
+                    transition
+                    duration-100
+                    group-hover:animate-from-right
+
+                    ">TAILWIND</h3>
+
+                </div>
+
+            </div>
+
+            <nav class="flex-1 flex flex-row h-20 items-center space-x-5 md:justify-end text-2xl text-center mr-6 
+            xs:mr-0 xs:pr-2 xs:mt-3 xs:text-center xs:text-base sm:justify-around sm:pl-3 sm:mt-3 md:m-0 md:mr-3">
+                <a class="menu-item" href="#">Inicio</a>
+                <a class="menu-item" href="#">Blog</a> </li>
+                <a class="menu-item" href="#">Formación</a>
+                <a class="menu-item" href="#">Contacto</a>
+            </nav>
+
+        </div>
+
+
+
+    </header>
+    <!-- fin cabecera -->
+    <!-- INICIO SECION INFORMACION -->
+    <section class="container w-11/12 mx-auto">
+        <!-- INICIO BANNER -->
+
+
+        <div id="banner" class="w-full h-28 border-8 border-white mx-auto overflow-hidden 
+            shadow m-5 bg-banner bg-banner-position animate-bg-banner">
+            <h1 class="block text-white text-5xl font-normal tracking-wider 
+                m-7 mx-auto text-center bebas text-banner animate-text-banner xs:text-2xl">
+                Curso de Tailwind de UDEMY </h1>
+        </div>
+        <!-- fin BANNER -->
+
+        <!-- INICIO TARJETAS -->
+        <div id="cards" class="grid grid-cols-5  xs:grid-cols-2 justify-between">
+            <div class="card">
+
+
+                <span class="card-icon 
+                group-hover:scale-150
+                group-hover:text-azul-claro
+                group-hover:animate-show-card-icon
+                ">H</span>
+
+                <h2 class="card-category group-hover:text-white
+                group-hover:animate-show-card-category">
+                    Desarrollo web
+                </h2>
+                <p class="card-description group-hover:text-white 
+                group-hover:animate-show-card-desc">
+                    Aprende los principales lenguajes de desarrollo web
+                </p>
+            </div>
+            <div class="card">
+
+                <span class="card-icon group-hover:scale-150
+                group-hover:text-azul-claro 
+                group-hover:animate-show-card-icon
+                ">_</span>
+
+                <h2 class="card-category group-hover:animate-show-card-category 
+                group-hover:text-white">
+                    Sistemas Operativos
+                </h2>
+                <p class="card-description group-hover:text-white
+                group-hover:animate-show-card-desc">
+                    Aprende a administrar sistemas operativos
+                </p>
+            </div>
+            <div class="card">
+
+                <span class="card-icon group-hover:scale-150
+                group-hover:text-azul-claro
+                group-hover:animate-show-card-icon
+                ">S</span>
+
+                <h2 class="card-category group-hover:animate-show-card-category 
+                group-hover:text-white">
+                    Hardware
+                </h2>
+                <p class="card-description group-hover:text-white
+                group-hover:animate-show-card-desc">
+                    Conoce todo acerca del Hardware
+                </p>
+            </div>
+
+            <div class="card">
+
+                <span class="card-icon group-hover:scale-150
+                group-hover:text-azul-claro
+                group-hover:animate-show-card-icon
+                ">u</span>
+
+                <h2 class="card-category group-hover:animate-show-card-category
+                 group-hover:text-white">
+                    Redes e Internet
+                </h2>
+                <p class="card-description group-hover:text-white
+                group-hover:animate-show-card-desc">
+                    Configura redes y servidores
+                </p>
+            </div>
+
+            <div class="card">
+
+                <span class="card-icon group-hover:scale-150
+                group-hover:text-azul-claro
+                group-hover:animate-show-card-icon
+                ">a</span>
+
+                <h2 class="card-category group-hover:animate-show-card-category 
+                group-hover:text-white">
+                    Bases de Datos</h2>
+                <p class="card-description group-hover:text-white
+                group-hover:animate-show-card-desc">
+                    Trabaja con las mejores BBDD
+                </p>
+            </div>
+        </div>
+        <!--FIN TARJETAS -->
+    </section>
+    <!-- FIN DE SECCION IFORMACION -->
+
+    <!-- CONTENIDO PRICIPAL INICIO -->
+
+    <main class="container w-11/12 flex mx-auto m-5 xs:flex-col sm:flex-col lg:flex-row ">
+        <!-- barra lateral -->
+        <aside id="lateral" class="
+        order-2
+        flex-none
+        w-64
+        min-h-ful
+        sm:m-0
+        xs:w-full
+        sm:w-full
+        md:w-full
+        lg:w-64
+       
+        ">
+            <h3 class="aside-header">Buscar</h3>
+            <div id="search" class="w-11/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded shadow-inner">
+                <form>
+                    <input class="w-10/12
+                    h-6
+                    border-none
+                    pl-1.5
+                    rounded-md
+                    bg-white
+                    text-gray-500
+                    transition
+                    duration-300  
+                    outline-none
+                    shadow-inner
+                    focus:outline-none
+                    " type="text">
+                    <input class="symbol h-6 cursor-pointer text-base 
+                    bg-transparent border-none text-gray-500 
+                    pl-1.5" type="button" value="L">
+
+                </form>
+            </div>
+            <h3 class="aside-header">Login</h3>
+            <div id="login" class="aside-box">
+                <form>
+                    <label for="email" class="login-icon">U</label>
+                    <input type="email" name="email" id="email" class="login-input">
+
+                    <label for="password" class="login-icon text-xl ml-7 mt-6 ">w</label>
+                    <input type="password" name="password" id="password" class="login-input">
+
+                    <input type="submit" value="enviar" class="login-button xs:ml-5 sm:ml-7">
+                    <input type="reset" value="limpiar" class="login-button ml-1">
+
+                    <a href="#" class="login-link">Registrate aqui</a>
+                    <a href="#" class="login-link">¿Contraseña olvidada?</a>
+
+                </form>
+            </div>
+
+            <h3 class="aside-header">Redes Sociales</h3>
+            <div id="social" class="aside-box h-48">
+                <div id="twitter" class="group twitter">
+                    <a href="#" class="social-icons
+               ">t</a>
+                    <p class="social-overlay group-hover:opacity-100
+                              group-hover:transform group-hover:translate-x-1">Twitter</p>
+                </div>
+                <div class="facebook group">
+                    <a href="https://www.facebook.com/rubengfp/" class="social-icons">f</a>
+                    <p class="social-overlay group-hover:opacity-100
+                    group-hover:transform group-hover:translate-x-1">Facebook</p>
+                </div>
+                <div class="group youtube">
+                    <a href="https://www.linkedin.com/in/ruben-gfp/" class="social-icons">l</a>
+                    <p class="social-overlay group-hover:opacity-100
+                    group-hover:transform group-hover:translate-x-1">Linkedin</p>
+                </div>
+            </div>
+            <h3 class="aside-header">Patreons</h3>
+            <div id="patreons" class="aside-box">
+                <p class="m-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eaque molestias
+                    temporibus labore,
+                    quos ullam numquam cupiditate ipsum aspernatur optio. Odio natus, asperiores nisi obcaecati quod
+                    eligendi doloribus eos error?</p>
+            </div>
+        </aside>
+        <!-- fin barra -->
+
+        <!-- inicio articulos -->
+        <section class=" flex-grow mr-10 xs:w-full ">
+            <h2 class="articles-header ">Ultimos Articulos</h2>
+            <!-- articulo -->
+            <article class="article-items">
+                <div class="article-data">
+                    <span>Fecha: 10 marzo</span>
+                    <span>Categoria:Pruebas</span>
+                </div>
+                <h4 class="article-head">
+                    <a href="#" class="">Titulo del articulo</a>
+                </h4>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quia praesentium fugit pariatur accusantium
+                    aspernatur facere reprehenderit! Sequi in necessitatibus officia nisi excepturi corrupti, cumque
+                    quibusdam veritatis hic impedit, aspernatur tempora?
+                </p>
+            </article>
+            <article class="article-items">
+                <div class="article-data">
+                    <span>Fecha: 11 marzo</span>
+                    <span>Categoria:Pruebas</span>
+                </div>
+                <h4 class="article-head">
+                    <a href="#" class="">Titulo del articulo</a>
+                </h4>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quia praesentium fugit pariatur accusantium
+                    aspernatur facere reprehenderit! Sequi in necessitatibus officia nisi excepturi corrupti, cumque
+                    quibusdam veritatis hic impedit, aspernatur tempora?
+                </p>
+            </article>
+            <article class="article-items">
+                <div class="article-data">
+                    <span>Fecha: 12 marzo</span>
+                    <span>Categoria:Pruebas</span>
+                </div>
+                <h4 class="article-head">
+                    <a href="#" class="">Titulo del articulo</a>
+                </h4>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quia praesentium fugit pariatur accusantium
+                    aspernatur facere reprehenderit! Sequi in necessitatibus officia nisi excepturi corrupti, cumque
+                    quibusdam veritatis hic impedit, aspernatur tempora?
+                </p>
+            </article>
+            <article class="article-items">
+                <div class="article-data">
+                    <span>Fecha: 14 marzo</span>
+                    <span>Categoria:Pruebas</span>
+                </div>
+                <h4 class="article-head">
+                    <a href="#" class="">Titulo del articulo</a>
+                </h4>
+                <p class="article-description">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quia praesentium fugit pariatur accusantium
+                    aspernatur facere reprehenderit! Sequi in necessitatibus officia nisi excepturi corrupti,
+                    cumque
+                    quibusdam veritatis hic impedit, aspernatur tempora?
+                </p>
+            </article>
+
+
+        </section>
+        <!-- fin articulos -->
+    </main>
+    <!-- CONTENIDO PRICIPAL FIN -->
+
+    <!-- INICIO PIE PAGINA -->
+    <footer id="footer" class="w-full h-auto text-white bg-black overflow-hidden">
+        <div class="
+        container 
+        w-11/12
+        mx-auto
+        grid
+        grid-cols-3 
+        mt-6
+        place-items-start
+        xs:grid-cols-1
+        xs:place-items-center
+        sm:grid-cols-1
+        sm:place-items-center
+        md:grid-cols-2
+        lg:grid-cols-3
+        ">
+            <div id="menu-footer" class="footer-box">
+                <h5 class="footer-header">MENU</h5>
+                <ul class="footer-menu">
+                    <li><a href="#">INICO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACION</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+
+            <div id="location" class="footer-box">
+                <h5 class="footer-header">¿DONDE ESTAMOS?</h5>
+                <iframe class="w-full h-80 mt-3 border-4 mb-5 border-gray-400 rounded-sm shadow-md"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1446.1737240435884!2d-5.6398568!3d43.5367988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367ba2c8834701%3A0x52855b8210a3f3fa!2sParque%20de%20Isabel%20La%20Cat%C3%B3lica!5e0!3m2!1ses!2ses!4v1644610514891!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="info" class="footer-box">
+                <h5 class="footer-header xs:mt-9 sm:mt-9 md:mt-9 lg:mt-0">Desarrollado con</h5>
+                <p class=" bg-white rounded-md p-1 m-7 mt-2 mb-5 text-center"><img class="block mx-auto"
+                        src="img/pngwing.logo.png" alt=""></p>
+                <h5>Optimizado para::</h5>
+                <div class="browsers flex flex-row space-x-5 mb-6">
+                    <a href="#">
+                        <img src="img/firefox-icon.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/chrome.png" alt="">
+                    </a>
+                    </p>
+                    <a href="#">
+                        <img src="img/Opera_256x256.png" alt="">
+                    </a>
+                    </p>
+                    <a href="#">
+                        <img src="img/safari.png" alt="">
+                    </a>
+                    </p>
+                    <a href="#">
+                        <img src="img/android.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/ios.png" alt="">
+                    </a>
+                </div>
+                <h5 class="footer-header">Autor:</h5>
+                <p>&copy; Ruben Gines</p>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- FIN PIE PAGINA -->
+
+</body>
+
+</html>
