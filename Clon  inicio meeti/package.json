@@ -1,0 +1,16 @@
+{
+  "name": "03-meeti",
+  "version": "1.0.0",
+  "description": "Aprendiendo Bootstrap 5 y Sass",
+  "main": "index.js",
+  "scripts": {
+    "compilarSass":"sass --watch src/scss:build/css",
+    "buildSass":"purgecss -css build/css/style.css -con index.html -o build/css/meeti.css"
+  },
+  "author": "Ruben-GFP",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.51.0"
+  }
+}
