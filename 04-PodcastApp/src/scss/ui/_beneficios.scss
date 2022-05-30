@@ -1,0 +1,17 @@
+@use "../custom" as *;
+@use "../utils/mixins" as m;
+
+.beneficios {
+  h2 {
+    @include m.headingBorder($secondary, $white);
+  }
+  .imagen {
+    transition: all ease 300ms;
+    &:hover {
+      @include media-breakpoint-up(md) {
+        @include transition(transform 300ms ease);
+        transform: rotate(8deg) scale(1.1);
+      }
+    }
+  }
+}
