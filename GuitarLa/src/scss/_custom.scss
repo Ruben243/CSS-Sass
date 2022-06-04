@@ -1,0 +1,45 @@
+$negro: #262626;
+$blanco: #fff;
+$naranja: #e99401;
+
+// reescribir
+
+$primary: $naranja;
+$white: $blanco;
+$dark: $negro;
+
+// Tipografia
+$fuente-headings: "Outfit", sans-serif;
+$fuente-textos: "Outfit", sans-serif;
+
+$headings-font-family: _$fuente-headings;
+$font-family-base: $fuente-textos;
+
+$headings-font-weight: 900;
+$h1-font-size: 4.4rem;
+$h2-font-size: 3.6rem;
+$h3-font-size: 2.6rem;
+$headings-color: $primary;
+
+// botones
+$btn-font-weight: 900;
+$btn-border-radius: 0;
+
+// links
+$link-color: $white;
+$link-decoration: none;
+$link-hover-color:$white;
+
+// cards
+$card-border-radius:0;
+$card-border-width: 0;
+
+$input-border-radius:1rem;
+$input-border-color:$dark;
+
+.fw-black {
+  font-weight: 900;
+}
+
+// Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
